@@ -1,0 +1,6 @@
+framework module aa_multiplatform_sdk {
+    umbrella header "aa_multiplatform_sdk.h"
+
+    export *
+    module * { export * }
+}
