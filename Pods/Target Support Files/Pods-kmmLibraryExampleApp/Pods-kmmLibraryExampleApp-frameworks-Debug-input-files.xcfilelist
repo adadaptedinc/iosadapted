@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-kmmLibraryExampleApp/Pods-kmmLibraryExampleApp-frameworks.sh
+${BUILT_PRODUCTS_DIR}/SearchTextField/SearchTextField.framework
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/aa_multiplatform_lib/aa_multiplatform_lib.framework/aa_multiplatform_lib

@@ -20,13 +20,24 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		755A8E9F6EA91E18BE564046C93534AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		7FE32352127AF05AB2EC2F7D3ADFB17D /* Pods-kmmLibraryExampleApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CC1EAE197E8EBED795176E2797258AF /* Pods-kmmLibraryExampleApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E0875801EA0FCF0ACEE11F8D5EC6C471 /* Pods-kmmLibraryExampleApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9D7988D0E85A1DA3D3FA774B39E9F6 /* Pods-kmmLibraryExampleApp-dummy.m */; };
+		21CCB69FF6709B7F51745D4015D2046C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		2B66D86F6D948904067F2E6EB1575785 /* Pods-kmmLibraryExampleApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CC1EAE197E8EBED795176E2797258AF /* Pods-kmmLibraryExampleApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E72573DC1600B675B305AB86A867084 /* Pods-kmmLibraryExampleApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9D7988D0E85A1DA3D3FA774B39E9F6 /* Pods-kmmLibraryExampleApp-dummy.m */; };
+		7001D61A505057C728C6FCF5688D1087 /* SearchTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D97BDCDAD3ADAC710780B1105125916E /* SearchTextField-dummy.m */; };
+		903CC45A3B2503C16AB3DB622CD843F1 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E35B2ED624FC1F11FA2AC2C2966BCA /* SearchTextField.swift */; };
+		A295A4CCB3719848C6D0C984794B136F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		E3DD5211E0939599AB451AD5CF372791 /* SearchTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D1A9556BCD43047C2881ED46E0B03507 /* SearchTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B2AC36D29E31AEB6C6892B08F3174A03 /* PBXContainerItemProxy */ = {
+		0A4E589C7542B4612B7815FA7298808E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C3F94412D7198255213EB9BC85FFF6E;
+			remoteInfo = SearchTextField;
+		};
+		1D9D5F25BCAB0F19C3D807EBFB2EBDE0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -36,7 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A062928D92A6ECC93C9312D86254F5A /* SearchTextField.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SearchTextField.debug.xcconfig; sourceTree = "<group>"; };
 		1CC1EAE197E8EBED795176E2797258AF /* Pods-kmmLibraryExampleApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-kmmLibraryExampleApp-umbrella.h"; sourceTree = "<group>"; };
+		27E38DF68C673A5EB8644FB6A9772F87 /* SearchTextField */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SearchTextField; path = SearchTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F9011CAFE31DC637ADB7E578F533EC6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		3C8BFCB87A2537C4F9C440BBFF307FFF /* Pods-kmmLibraryExampleApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-kmmLibraryExampleApp-Info.plist"; sourceTree = "<group>"; };
 		3CEB6A2D909A5870718235497C3FB238 /* Pods-kmmLibraryExampleApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-kmmLibraryExampleApp-frameworks.sh"; sourceTree = "<group>"; };
@@ -45,23 +58,38 @@
 		65BEE16920C1EDD7FC02385213804363 /* aa_multiplatform_lib.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = aa_multiplatform_lib.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		84E7F05641D4FAF2315C1A7938A3BEE4 /* Pods-kmmLibraryExampleApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-kmmLibraryExampleApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		87C5C2B872EC9B5F12FE1ED51B7E925E /* SearchTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SearchTextField.modulemap; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AEE41C59D375FFC8A220587D296E78CE /* SearchTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SearchTextField-prefix.pch"; sourceTree = "<group>"; };
 		B3C7599DAC5F566F952F311486EDAB02 /* aa_multiplatform_lib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = aa_multiplatform_lib.release.xcconfig; sourceTree = "<group>"; };
+		BDD288F1B866CAD56590FABD4A5187EC /* SearchTextField-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SearchTextField-Info.plist"; sourceTree = "<group>"; };
 		C4910A231F2B94D61EDCB43ECF23D329 /* Pods-kmmLibraryExampleApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-kmmLibraryExampleApp.modulemap"; sourceTree = "<group>"; };
 		C926C6DF00433F38FB5ABD049F8CBA81 /* aa_multiplatform_lib-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "aa_multiplatform_lib-xcframeworks.sh"; sourceTree = "<group>"; };
 		CAC9A14E8504C870EE9023DE6FB57903 /* Pods-kmmLibraryExampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kmmLibraryExampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		D1A9556BCD43047C2881ED46E0B03507 /* SearchTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SearchTextField-umbrella.h"; sourceTree = "<group>"; };
+		D97BDCDAD3ADAC710780B1105125916E /* SearchTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SearchTextField-dummy.m"; sourceTree = "<group>"; };
 		DD9D7988D0E85A1DA3D3FA774B39E9F6 /* Pods-kmmLibraryExampleApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-kmmLibraryExampleApp-dummy.m"; sourceTree = "<group>"; };
+		E1E35B2ED624FC1F11FA2AC2C2966BCA /* SearchTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchTextField.swift; path = SearchTextField/Classes/SearchTextField.swift; sourceTree = "<group>"; };
 		E66D5934FF5564CCFA6E7B7B149CCEB1 /* aa_multiplatform_lib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = aa_multiplatform_lib.debug.xcconfig; sourceTree = "<group>"; };
+		EE490A619112C4A4CDDA3E2850070C2E /* SearchTextField.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SearchTextField.release.xcconfig; sourceTree = "<group>"; };
 		F670734108CE18CB7F5698FBEB2DB9B0 /* Pods-kmmLibraryExampleApp */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-kmmLibraryExampleApp"; path = Pods_kmmLibraryExampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F96F7C08276546C392BBEC97EC341102 /* Pods-kmmLibraryExampleApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-kmmLibraryExampleApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0E5B5994572E2EEF608662E80A911177 /* Frameworks */ = {
+		5E59E5298EE346009F549E0338C06A05 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				755A8E9F6EA91E18BE564046C93534AF /* Foundation.framework in Frameworks */,
+				21CCB69FF6709B7F51745D4015D2046C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8F7DE7FDCE92D9A12FEE8EC4D9632EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A295A4CCB3719848C6D0C984794B136F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +103,23 @@
 				2F9011CAFE31DC637ADB7E578F533EC6 /* LICENSE */,
 			);
 			name = Pod;
+			sourceTree = "<group>";
+		};
+		0CC605EE7DFDAFF16C4956A69C7AFA78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F670734108CE18CB7F5698FBEB2DB9B0 /* Pods-kmmLibraryExampleApp */,
+				27E38DF68C673A5EB8644FB6A9772F87 /* SearchTextField */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		10EEF578E1233F8FB3698F7B0E483368 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ACF4C196B1E2874F3F2DF307C21C3B97 /* SearchTextField */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		2BC462D05D1067DEEA056F292CCA4D67 /* aa_multiplatform_lib */ = {
@@ -105,14 +150,6 @@
 			);
 			name = "Support Files";
 			path = "../../kmmLibraryExample/kmmLibraryExampleApp/Pods/Target Support Files/aa_multiplatform_lib";
-			sourceTree = "<group>";
-		};
-		44F8851476D1496A54D0586825C00448 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F670734108CE18CB7F5698FBEB2DB9B0 /* Pods-kmmLibraryExampleApp */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -148,13 +185,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		ACF4C196B1E2874F3F2DF307C21C3B97 /* SearchTextField */ = {
+			isa = PBXGroup;
+			children = (
+				E1E35B2ED624FC1F11FA2AC2C2966BCA /* SearchTextField.swift */,
+				B87926D3082B3B36D503BABAD83A2746 /* Support Files */,
+			);
+			name = SearchTextField;
+			path = SearchTextField;
+			sourceTree = "<group>";
+		};
+		B87926D3082B3B36D503BABAD83A2746 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				87C5C2B872EC9B5F12FE1ED51B7E925E /* SearchTextField.modulemap */,
+				D97BDCDAD3ADAC710780B1105125916E /* SearchTextField-dummy.m */,
+				BDD288F1B866CAD56590FABD4A5187EC /* SearchTextField-Info.plist */,
+				AEE41C59D375FFC8A220587D296E78CE /* SearchTextField-prefix.pch */,
+				D1A9556BCD43047C2881ED46E0B03507 /* SearchTextField-umbrella.h */,
+				1A062928D92A6ECC93C9312D86254F5A /* SearchTextField.debug.xcconfig */,
+				EE490A619112C4A4CDDA3E2850070C2E /* SearchTextField.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SearchTextField";
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				EA2D1061E3B5957F88ABBFB464FDA19F /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				44F8851476D1496A54D0586825C00448 /* Products */,
+				10EEF578E1233F8FB3698F7B0E483368 /* Pods */,
+				0CC605EE7DFDAFF16C4956A69C7AFA78 /* Products */,
 				3A74F3A13BD5006D9F13726F1D9E714A /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -178,11 +241,19 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		18082FAC3ECE23F1EEA9F096A6541FBC /* Headers */ = {
+		4A4525D29045BE265F4F9FCAE2C89C02 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FE32352127AF05AB2EC2F7D3ADFB17D /* Pods-kmmLibraryExampleApp-umbrella.h in Headers */,
+				E3DD5211E0939599AB451AD5CF372791 /* SearchTextField-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F45D1EB4C58C3B186230F754C9D22355 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B66D86F6D948904067F2E6EB1575785 /* Pods-kmmLibraryExampleApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,21 +262,40 @@
 /* Begin PBXNativeTarget section */
 		292D1E74C4695BE2D4AA825704898C53 /* Pods-kmmLibraryExampleApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8F474D87C784F040D1CA5ADCDFE3636C /* Build configuration list for PBXNativeTarget "Pods-kmmLibraryExampleApp" */;
+			buildConfigurationList = C1100D851A3A32C462FA230E1486300E /* Build configuration list for PBXNativeTarget "Pods-kmmLibraryExampleApp" */;
 			buildPhases = (
-				18082FAC3ECE23F1EEA9F096A6541FBC /* Headers */,
-				898AE07E3C8D6F06F8BA3B805F749BAC /* Sources */,
-				0E5B5994572E2EEF608662E80A911177 /* Frameworks */,
-				F5F7346CEF17C12BC2C72C320E97F843 /* Resources */,
+				F45D1EB4C58C3B186230F754C9D22355 /* Headers */,
+				4B223A525819F6CDAB5AA5A0CE51D702 /* Sources */,
+				5E59E5298EE346009F549E0338C06A05 /* Frameworks */,
+				CD52849E46ED0E45991E0FDEE8BCB86A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				45158F91DCB623B2A3E97F24D8421BF2 /* PBXTargetDependency */,
+				B0A10CA4185FBB0964819A933CA8A67E /* PBXTargetDependency */,
+				BC2014D7D5AD51A2AF03E13AFDD9272F /* PBXTargetDependency */,
 			);
 			name = "Pods-kmmLibraryExampleApp";
 			productName = Pods_kmmLibraryExampleApp;
 			productReference = F670734108CE18CB7F5698FBEB2DB9B0 /* Pods-kmmLibraryExampleApp */;
+			productType = "com.apple.product-type.framework";
+		};
+		8C3F94412D7198255213EB9BC85FFF6E /* SearchTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D9EB5D86A537AAF4224ADF47A5ECF9A /* Build configuration list for PBXNativeTarget "SearchTextField" */;
+			buildPhases = (
+				4A4525D29045BE265F4F9FCAE2C89C02 /* Headers */,
+				05E442207DEC83B345D5624A3925F053 /* Sources */,
+				A8F7DE7FDCE92D9A12FEE8EC4D9632EB /* Frameworks */,
+				4A1B82FCB14A028FDD88DC7038D46259 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SearchTextField;
+			productName = SearchTextField;
+			productReference = 27E38DF68C673A5EB8644FB6A9772F87 /* SearchTextField */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -226,18 +316,26 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 44F8851476D1496A54D0586825C00448 /* Products */;
+			productRefGroup = 0CC605EE7DFDAFF16C4956A69C7AFA78 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				AFFDCA8658CCF78F57DB67769CCC2826 /* aa_multiplatform_lib */,
 				292D1E74C4695BE2D4AA825704898C53 /* Pods-kmmLibraryExampleApp */,
+				8C3F94412D7198255213EB9BC85FFF6E /* SearchTextField */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F5F7346CEF17C12BC2C72C320E97F843 /* Resources */ = {
+		4A1B82FCB14A028FDD88DC7038D46259 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD52849E46ED0E45991E0FDEE8BCB86A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -267,27 +365,42 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		898AE07E3C8D6F06F8BA3B805F749BAC /* Sources */ = {
+		05E442207DEC83B345D5624A3925F053 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0875801EA0FCF0ACEE11F8D5EC6C471 /* Pods-kmmLibraryExampleApp-dummy.m in Sources */,
+				903CC45A3B2503C16AB3DB622CD843F1 /* SearchTextField.swift in Sources */,
+				7001D61A505057C728C6FCF5688D1087 /* SearchTextField-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B223A525819F6CDAB5AA5A0CE51D702 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E72573DC1600B675B305AB86A867084 /* Pods-kmmLibraryExampleApp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		45158F91DCB623B2A3E97F24D8421BF2 /* PBXTargetDependency */ = {
+		B0A10CA4185FBB0964819A933CA8A67E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SearchTextField;
+			target = 8C3F94412D7198255213EB9BC85FFF6E /* SearchTextField */;
+			targetProxy = 0A4E589C7542B4612B7815FA7298808E /* PBXContainerItemProxy */;
+		};
+		BC2014D7D5AD51A2AF03E13AFDD9272F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = aa_multiplatform_lib;
 			target = AFFDCA8658CCF78F57DB67769CCC2826 /* aa_multiplatform_lib */;
-			targetProxy = B2AC36D29E31AEB6C6892B08F3174A03 /* PBXContainerItemProxy */;
+			targetProxy = 1D9D5F25BCAB0F19C3D807EBFB2EBDE0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3045CE2587AD3CD6D19245CFF75829D8 /* Release */ = {
+		39DEAF4A659DF91EB92C532F728E318A /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CAC9A14E8504C870EE9023DE6FB57903 /* Pods-kmmLibraryExampleApp.release.xcconfig */;
 			buildSettings = {
@@ -341,6 +454,41 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
+		};
+		45AE49051165993569CEBC0C8E17CA14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE490A619112C4A4CDDA3E2850070C2E /* SearchTextField.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SearchTextField/SearchTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SearchTextField/SearchTextField-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SearchTextField/SearchTextField.modulemap";
+				PRODUCT_MODULE_NAME = SearchTextField;
+				PRODUCT_NAME = SearchTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		593F10BFFA94DAC7D6E17FB8A7F32D72 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -403,43 +551,6 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
-		};
-		640C5A84321912D1F5DA27B2506DC4EA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63A4A46F80AB75FAFEC6B3CEB5ADA3DE /* Pods-kmmLibraryExampleApp.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-kmmLibraryExampleApp/Pods-kmmLibraryExampleApp-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-kmmLibraryExampleApp/Pods-kmmLibraryExampleApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		7C57D151FFD9760E643DE584A95DDF4E /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -525,9 +636,89 @@
 			};
 			name = Debug;
 		};
+		FB67631F4145D91CDC9C5944A95A0C62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63A4A46F80AB75FAFEC6B3CEB5ADA3DE /* Pods-kmmLibraryExampleApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-kmmLibraryExampleApp/Pods-kmmLibraryExampleApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-kmmLibraryExampleApp/Pods-kmmLibraryExampleApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FF69B5C4F483A5C61DC52F8BAC11E89B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A062928D92A6ECC93C9312D86254F5A /* SearchTextField.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SearchTextField/SearchTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SearchTextField/SearchTextField-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SearchTextField/SearchTextField.modulemap";
+				PRODUCT_MODULE_NAME = SearchTextField;
+				PRODUCT_NAME = SearchTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0D9EB5D86A537AAF4224ADF47A5ECF9A /* Build configuration list for PBXNativeTarget "SearchTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF69B5C4F483A5C61DC52F8BAC11E89B /* Debug */,
+				45AE49051165993569CEBC0C8E17CA14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1444C72BAF8160010E31603BE66D6583 /* Build configuration list for PBXAggregateTarget "aa_multiplatform_lib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -546,11 +737,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8F474D87C784F040D1CA5ADCDFE3636C /* Build configuration list for PBXNativeTarget "Pods-kmmLibraryExampleApp" */ = {
+		C1100D851A3A32C462FA230E1486300E /* Build configuration list for PBXNativeTarget "Pods-kmmLibraryExampleApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				640C5A84321912D1F5DA27B2506DC4EA /* Debug */,
-				3045CE2587AD3CD6D19245CFF75829D8 /* Release */,
+				FB67631F4145D91CDC9C5944A95A0C62 /* Debug */,
+				39DEAF4A659DF91EB92C532F728E318A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

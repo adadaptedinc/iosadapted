@@ -8,10 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		B8483FEF7982EF9406E60EC4 /* Pods_kmmLibraryExampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1469BF10A201211269B003F1 /* Pods_kmmLibraryExampleApp.framework */; };
+		DF23DFE6280F583E002C5DB9 /* cropped-AdAdapted-Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DF23DFE5280F583E002C5DB9 /* cropped-AdAdapted-Logo.png */; };
+		DF23DFEA2811F1D0002C5DB9 /* SearchTextFieldItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF23DFE92811F1D0002C5DB9 /* SearchTextFieldItem.swift */; };
+		DF23DFEC2811F3BB002C5DB9 /* SearchFieldTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF23DFEB2811F3BB002C5DB9 /* SearchFieldTheme.swift */; };
+		DF23DFEE2811F4D7002C5DB9 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF23DFED2811F4D7002C5DB9 /* SearchTextField.swift */; };
+		DF23DFF02812FFF8002C5DB9 /* AddToListItemCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF23DFEF2812FFF8002C5DB9 /* AddToListItemCache.swift */; };
 		DF5CD68827AC6862004E8926 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5CD68727AC6862004E8926 /* AppDelegate.swift */; };
 		DF5CD68A27AC6862004E8926 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5CD68927AC6862004E8926 /* SceneDelegate.swift */; };
 		DF5CD68C27AC6862004E8926 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5CD68B27AC6862004E8926 /* ViewController.swift */; };
-		DF5CD68F27AC6862004E8926 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5CD68D27AC6862004E8926 /* Main.storyboard */; };
 		DF5CD69127AC6863004E8926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5CD69027AC6863004E8926 /* Assets.xcassets */; };
 		DF5CD69427AC6863004E8926 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5CD69227AC6863004E8926 /* LaunchScreen.storyboard */; };
 		DFC9880A27EB8DDB00F2E886 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DFC9880927EB8DDB00F2E886 /* .gitignore */; };
@@ -21,11 +25,15 @@
 		06876A8FB3C712470F26CA03 /* Pods-kmmLibraryExampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kmmLibraryExampleApp.debug.xcconfig"; path = "Target Support Files/Pods-kmmLibraryExampleApp/Pods-kmmLibraryExampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 		1469BF10A201211269B003F1 /* Pods_kmmLibraryExampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kmmLibraryExampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		227856FB00421C0F539BC4C3 /* Pods-kmmLibraryExampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kmmLibraryExampleApp.release.xcconfig"; path = "Target Support Files/Pods-kmmLibraryExampleApp/Pods-kmmLibraryExampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		DF23DFE5280F583E002C5DB9 /* cropped-AdAdapted-Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cropped-AdAdapted-Logo.png"; path = "Assets.xcassets/cropped-AdAdapted-Logo.png"; sourceTree = "<group>"; };
+		DF23DFE92811F1D0002C5DB9 /* SearchTextFieldItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextFieldItem.swift; sourceTree = "<group>"; };
+		DF23DFEB2811F3BB002C5DB9 /* SearchFieldTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFieldTheme.swift; sourceTree = "<group>"; };
+		DF23DFED2811F4D7002C5DB9 /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+		DF23DFEF2812FFF8002C5DB9 /* AddToListItemCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToListItemCache.swift; sourceTree = "<group>"; };
 		DF5CD68427AC6862004E8926 /* kmmLibraryExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kmmLibraryExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF5CD68727AC6862004E8926 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF5CD68927AC6862004E8926 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DF5CD68B27AC6862004E8926 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DF5CD68E27AC6862004E8926 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DF5CD69027AC6863004E8926 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF5CD69327AC6863004E8926 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF5CD69527AC6863004E8926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,15 +91,27 @@
 		DF5CD68627AC6862004E8926 /* kmmLibraryExampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				DFAA096E2833DFBA0029A6D4 /* search */,
+				DF23DFE5280F583E002C5DB9 /* cropped-AdAdapted-Logo.png */,
 				DF5CD68727AC6862004E8926 /* AppDelegate.swift */,
 				DF5CD68927AC6862004E8926 /* SceneDelegate.swift */,
 				DF5CD68B27AC6862004E8926 /* ViewController.swift */,
-				DF5CD68D27AC6862004E8926 /* Main.storyboard */,
 				DF5CD69027AC6863004E8926 /* Assets.xcassets */,
 				DF5CD69227AC6863004E8926 /* LaunchScreen.storyboard */,
 				DF5CD69527AC6863004E8926 /* Info.plist */,
+				DF23DFEF2812FFF8002C5DB9 /* AddToListItemCache.swift */,
 			);
 			path = kmmLibraryExampleApp;
+			sourceTree = "<group>";
+		};
+		DFAA096E2833DFBA0029A6D4 /* search */ = {
+			isa = PBXGroup;
+			children = (
+				DF23DFE92811F1D0002C5DB9 /* SearchTextFieldItem.swift */,
+				DF23DFEB2811F3BB002C5DB9 /* SearchFieldTheme.swift */,
+				DF23DFED2811F4D7002C5DB9 /* SearchTextField.swift */,
+			);
+			path = search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,7 +125,7 @@
 				DF5CD68027AC6862004E8926 /* Sources */,
 				DF5CD68127AC6862004E8926 /* Frameworks */,
 				DF5CD68227AC6862004E8926 /* Resources */,
-				B64DC6F94FEF92DDC05A508F /* [CP] Embed Pods Frameworks */,
+				D305BEB660A90C1E9896E7B6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,33 +174,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF23DFE6280F583E002C5DB9 /* cropped-AdAdapted-Logo.png in Resources */,
 				DFC9880A27EB8DDB00F2E886 /* .gitignore in Resources */,
 				DF5CD69427AC6863004E8926 /* LaunchScreen.storyboard in Resources */,
 				DF5CD69127AC6863004E8926 /* Assets.xcassets in Resources */,
-				DF5CD68F27AC6862004E8926 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B64DC6F94FEF92DDC05A508F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-kmmLibraryExampleApp/Pods-kmmLibraryExampleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-kmmLibraryExampleApp/Pods-kmmLibraryExampleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kmmLibraryExampleApp/Pods-kmmLibraryExampleApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		CA9F9FDDD45AD5C87A8829DD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -203,6 +206,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D305BEB660A90C1E9896E7B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kmmLibraryExampleApp/Pods-kmmLibraryExampleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kmmLibraryExampleApp/Pods-kmmLibraryExampleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kmmLibraryExampleApp/Pods-kmmLibraryExampleApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -212,21 +232,17 @@
 			files = (
 				DF5CD68C27AC6862004E8926 /* ViewController.swift in Sources */,
 				DF5CD68827AC6862004E8926 /* AppDelegate.swift in Sources */,
+				DF23DFEA2811F1D0002C5DB9 /* SearchTextFieldItem.swift in Sources */,
+				DF23DFF02812FFF8002C5DB9 /* AddToListItemCache.swift in Sources */,
+				DF23DFEC2811F3BB002C5DB9 /* SearchFieldTheme.swift in Sources */,
 				DF5CD68A27AC6862004E8926 /* SceneDelegate.swift in Sources */,
+				DF23DFEE2811F4D7002C5DB9 /* SearchTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DF5CD68D27AC6862004E8926 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DF5CD68E27AC6862004E8926 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DF5CD69227AC6863004E8926 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -367,7 +383,6 @@
 				INFOPLIST_FILE = kmmLibraryExampleApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -396,7 +411,6 @@
 				INFOPLIST_FILE = kmmLibraryExampleApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
