@@ -1,14 +1,8 @@
 PODS:
   - aa_multiplatform_lib (0.0.1)
-  - SearchTextField (1.2.4)
 
 DEPENDENCIES:
   - aa_multiplatform_lib (from `/Users/matthewkruk/Documents/aaKmmLib/aa_multiplatform_lib`)
-  - SearchTextField
-
-SPEC REPOS:
-  trunk:
-    - SearchTextField
 
 EXTERNAL SOURCES:
   aa_multiplatform_lib:
@@ -16,8 +10,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   aa_multiplatform_lib: f8ba6703a54df999191b632624996267becbe426
-  SearchTextField: 40dc3cc57def5a211f263cac263622c163bbc25a
 
-PODFILE CHECKSUM: 5f74c40c05617b81270f190985a3baadb5c25c8c
+PODFILE CHECKSUM: 6c3dd77297bfb7683613c33a520592e63b0b02b8
 
 COCOAPODS: 1.11.3

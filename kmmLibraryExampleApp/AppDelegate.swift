@@ -28,6 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
                 DispatchQueue.main.async {
                     _addToListItemCache?.items?.value = listItems
+                    print("Cached list items: \(listItems)")
                 }
             })
         do {

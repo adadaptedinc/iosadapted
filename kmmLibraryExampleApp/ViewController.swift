@@ -7,7 +7,6 @@
 //
 
 import aa_multiplatform_lib
-import SearchTextField
 import UIKit
 
 class ViewController: UIViewController,
@@ -17,10 +16,10 @@ class ViewController: UIViewController,
                       AdContentListener {
 
     var zoneView: UIView?
-    var resultListTableView: UITableView = UITableView()
-    var searchField = SearchTextField()
-    var searchText = ""
-    var keywordList = [String]()
+    var currentSuggestions: [Suggestion]?
+    var resultListTableView = UITableView()
+    var searchField = SearchTextFieldUI()
+    var searchFieldText = ""
 
     var addButton: UIButton = {
         var button = UIButton()
@@ -43,22 +42,23 @@ class ViewController: UIViewController,
 
         // Initialize a view with AAZoneView and zone id
         self.zoneView = AAZoneView(zoneId: "101930", contentListener: self).getZoneView()
-        navigationItem.hidesSearchBarWhenScrolling = false
 
-        populateDefaultLists()
+        populateDefaultList()
+        printTime()
     }
 
     required init?(coder: NSCoder) {
         super.init(coder: coder)
+
         // Initialize a view with AAZoneView and zone id
         self.zoneView = AAZoneView(zoneId: "101930", contentListener: self).getZoneView()
-        navigationItem.hidesSearchBarWhenScrolling = false
 
-        populateDefaultLists()
+        populateDefaultList()
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Add observer for out-of-app list items
         NotificationCenter.default.addObserver(self, selector: #selector(addDetailedItemTapped(notification:)), name: NSNotification.Name(rawValue: "addDetailedListItem"), object: nil)
 
@@ -128,13 +128,21 @@ class ViewController: UIViewController,
         }
     }
 
-    @objc
-    func addButtonTapped() {
-        if searchText != "" {
-            listItems.append(searchText)
-            print("\(searchText) added to list")
+    @objc func addButtonTapped() {
+        if searchFieldText != "" {
+            listItems.append(searchFieldText)
+            print("\(searchFieldText) added to list")
+            if let suggestions = currentSuggestions {
+                for suggestion in suggestions {
+                    if searchFieldText == suggestion.name {
+
+                        // confirm keyword added to user's list
+                        suggestion.selected()
+                    }
+                }
+            }
         }
-        searchText = ""
+        searchFieldText = ""
         searchField.text = ""
     }
 
@@ -151,18 +159,6 @@ class ViewController: UIViewController,
         searchField.tintColor = .systemBlue
         searchField.placeholder = "Groceries I Need"
         searchField.autocapitalizationType = .none
-        searchField.filterStrings(keywordList)
-        searchField.inlineMode = true
-        searchField.comparisonOptions = [.caseInsensitive]
-        searchField.itemSelectionHandler = { filteredResults, itemPosition in
-            // Just in case you need the item position
-            let item = filteredResults[itemPosition]
-            print("Item at position \(itemPosition): \(item.title)")
-
-            // Do whatever you want with the picked item
-            self.searchField.text = item.title
-        }
-        searchField.addTarget(self, action: #selector(textFieldDidChangeSelection(_:)), for: .editingChanged)
     }
 
     private func setupResultView() {
@@ -172,30 +168,39 @@ class ViewController: UIViewController,
         resultListTableView.delegate = self
     }
 
-    private func populateDefaultLists() {
+    private func populateDefaultList() {
         listItems.append("Eggs")
         listItems.append("Bread")
+    }
 
-        keywordList.append("Fancy milk")
-        keywordList.append("Starbucks coffee")
-        keywordList.append("Glade trash bags")
+    @objc
+    func printTime() {
+        print("Current epoch time: \(UInt64(floor(NSDate().timeIntervalSince1970 * 1000)))")
     }
 }
 
 extension ViewController {
     func textFieldDidChangeSelection(_ textField: UITextField) {
-        searchText = textField.text ?? ""
+        searchFieldText = textField.text ?? ""
+        let keywords = InterceptMatcher.shared.match(constraint: searchFieldText)
+        for keyword in keywords {
+
+            // confirm keyword suggested to user
+            keyword.presented()
+            currentSuggestions?.append(keyword)
+            searchField.resultsList.append(keyword.name)
+        }
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return listItems.count
+            return listItems.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "aaCell", for: indexPath)
-        if listItems.count >= 1 {
-            cell.textLabel?.text = listItems[indexPath.row]
-        }
-        return cell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "aaCell", for: indexPath)
+            if listItems.count >= 1 {
+                cell.textLabel?.text = listItems[indexPath.row]
+            }
+            return cell
     }
 }

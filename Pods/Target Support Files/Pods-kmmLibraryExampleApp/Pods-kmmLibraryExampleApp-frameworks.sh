@@ -176,11 +176,9 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/SearchTextField/SearchTextField.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/aa_multiplatform_lib/aa_multiplatform_lib.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/SearchTextField/SearchTextField.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/aa_multiplatform_lib/aa_multiplatform_lib.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
