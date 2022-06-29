@@ -13,9 +13,11 @@ class ViewController: UIViewController,
                       UITableViewDelegate,
                       UITableViewDataSource,
                       UITextFieldDelegate,
+                    // Add content listener
                       AdContentListener {
 
     var zoneView: UIView?
+
     var currentSuggestions: [Suggestion]?
     var resultListTableView = UITableView()
     var searchField = SearchTextFieldUI()
@@ -44,7 +46,6 @@ class ViewController: UIViewController,
         self.zoneView = AAZoneView(zoneId: "101930", contentListener: self).getZoneView()
 
         populateDefaultList()
-        printTime()
     }
 
     required init?(coder: NSCoder) {
@@ -59,7 +60,6 @@ class ViewController: UIViewController,
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Add observer for out-of-app list items
         NotificationCenter.default.addObserver(self, selector: #selector(addDetailedItemTapped(notification:)), name: NSNotification.Name(rawValue: "addDetailedListItem"), object: nil)
 
         view.backgroundColor = .white
@@ -69,14 +69,6 @@ class ViewController: UIViewController,
 
         setupSearchBar()
         setupResultView()
-
-        _addToListItemCache?.items?.observe { [weak self] (items) in
-            items.forEach { item in
-                self?.listItems.append(item.title)
-                print("Item cached: \(item.title)")
-            }
-            self?.resultListTableView.reloadData()
-        }
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -131,7 +123,10 @@ class ViewController: UIViewController,
     @objc func addButtonTapped() {
         if searchFieldText != "" {
             listItems.append(searchFieldText)
-            print("\(searchFieldText) added to list")
+
+            // Manage list events
+            AdAdaptedListManager().itemAddedToList(item: searchFieldText, list: "Main Grocery List")
+
             if let suggestions = currentSuggestions {
                 for suggestion in suggestions {
                     if searchFieldText == suggestion.name {
@@ -150,7 +145,9 @@ class ViewController: UIViewController,
     func addDetailedItemTapped(notification: NSNotification) {
         let itemTitle = notification.userInfo!["detailedItem"] as! String
         listItems.append(itemTitle)
-        print("\(itemTitle) added to list")
+
+        // Manage list events
+        AdAdaptedListManager().itemAddedToList(item: itemTitle, list: "Main Grocery List")
     }
 
     private func setupSearchBar() {
@@ -171,11 +168,6 @@ class ViewController: UIViewController,
     private func populateDefaultList() {
         listItems.append("Eggs")
         listItems.append("Bread")
-    }
-
-    @objc
-    func printTime() {
-        print("Current epoch time: \(UInt64(floor(NSDate().timeIntervalSince1970 * 1000)))")
     }
 }
 

@@ -81,8 +81,10 @@ class SearchTextFieldUI: UITextField, UITableViewDelegate, UITableViewDataSource
             tableView.layer.masksToBounds = true
             tableView.separatorInset = UIEdgeInsets.zero
             tableView.layer.cornerRadius = 5.0
-            tableView.separatorColor = UIColor.lightGray
-            tableView.backgroundColor = UIColor.white.withAlphaComponent(0.8)
+            tableView.separatorStyle = .none
+            tableView.backgroundColor = UIColor.white
+            tableView.layer.borderWidth = 2.0
+            tableView.layer.borderColor = CGColor.init(red: 0, green: 0, blue: 255, alpha: 1)
 
             if self.isFirstResponder {
                 superview?.bringSubviewToFront(self)
@@ -101,7 +103,7 @@ class SearchTextFieldUI: UITextField, UITableViewDelegate, UITableViewDataSource
         if !resultsList.isEmpty {
             cell.textLabel?.text = resultsList[indexPath.row]
         }
-        cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 12.0)
+        cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 16.0)
         return cell
     }
 

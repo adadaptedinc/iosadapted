@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DF23DFE6280F583E002C5DB9 /* cropped-AdAdapted-Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DF23DFE5280F583E002C5DB9 /* cropped-AdAdapted-Logo.png */; };
-		DF23DFF02812FFF8002C5DB9 /* AddToListItemCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF23DFEF2812FFF8002C5DB9 /* AddToListItemCache.swift */; };
 		DF5CD68827AC6862004E8926 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5CD68727AC6862004E8926 /* AppDelegate.swift */; };
 		DF5CD68A27AC6862004E8926 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5CD68927AC6862004E8926 /* SceneDelegate.swift */; };
 		DF5CD68C27AC6862004E8926 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5CD68B27AC6862004E8926 /* ViewController.swift */; };
@@ -24,7 +23,6 @@
 		A953DDE9C4C4AB5FB0AD0E30 /* Pods-kmmLibraryExampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kmmLibraryExampleApp.debug.xcconfig"; path = "Target Support Files/Pods-kmmLibraryExampleApp/Pods-kmmLibraryExampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B4081780B1DD1450B64BDD49 /* Pods_kmmLibraryExampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kmmLibraryExampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF23DFE5280F583E002C5DB9 /* cropped-AdAdapted-Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cropped-AdAdapted-Logo.png"; path = "Assets.xcassets/cropped-AdAdapted-Logo.png"; sourceTree = "<group>"; };
-		DF23DFEF2812FFF8002C5DB9 /* AddToListItemCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToListItemCache.swift; sourceTree = "<group>"; };
 		DF5CD68427AC6862004E8926 /* kmmLibraryExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kmmLibraryExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF5CD68727AC6862004E8926 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF5CD68927AC6862004E8926 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +31,7 @@
 		DF5CD69327AC6863004E8926 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF5CD69527AC6863004E8926 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF67416A2849136200180449 /* SearchTextFieldUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextFieldUI.swift; sourceTree = "<group>"; };
+		DFC8FE5E286B43BC007EE877 /* kmmLibraryExampleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = kmmLibraryExampleApp.entitlements; sourceTree = "<group>"; };
 		DFC9880927EB8DDB00F2E886 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +86,7 @@
 		DF5CD68627AC6862004E8926 /* kmmLibraryExampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				DFC8FE5E286B43BC007EE877 /* kmmLibraryExampleApp.entitlements */,
 				DF23DFE5280F583E002C5DB9 /* cropped-AdAdapted-Logo.png */,
 				DF5CD68727AC6862004E8926 /* AppDelegate.swift */,
 				DF5CD68927AC6862004E8926 /* SceneDelegate.swift */,
@@ -94,7 +94,6 @@
 				DF5CD69027AC6863004E8926 /* Assets.xcassets */,
 				DF5CD69227AC6863004E8926 /* LaunchScreen.storyboard */,
 				DF5CD69527AC6863004E8926 /* Info.plist */,
-				DF23DFEF2812FFF8002C5DB9 /* AddToListItemCache.swift */,
 				DF67416A2849136200180449 /* SearchTextFieldUI.swift */,
 			);
 			path = kmmLibraryExampleApp;
@@ -111,7 +110,7 @@
 				DF5CD68027AC6862004E8926 /* Sources */,
 				DF5CD68127AC6862004E8926 /* Frameworks */,
 				DF5CD68227AC6862004E8926 /* Resources */,
-				8FB02FCD979E253B83C5D915 /* [CP] Embed Pods Frameworks */,
+				5FF6092F16CB069718A919DC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,7 +169,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8FB02FCD979E253B83C5D915 /* [CP] Embed Pods Frameworks */ = {
+		5FF6092F16CB069718A919DC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -219,7 +218,6 @@
 				DF5CD68C27AC6862004E8926 /* ViewController.swift in Sources */,
 				DF5CD68827AC6862004E8926 /* AppDelegate.swift in Sources */,
 				DF67416B2849136200180449 /* SearchTextFieldUI.swift in Sources */,
-				DF23DFF02812FFF8002C5DB9 /* AddToListItemCache.swift in Sources */,
 				DF5CD68A27AC6862004E8926 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +358,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = kmmLibraryExampleApp/kmmLibraryExampleApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = E4LB8UE2WX;
@@ -388,6 +387,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = kmmLibraryExampleApp/kmmLibraryExampleApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = E4LB8UE2WX;
