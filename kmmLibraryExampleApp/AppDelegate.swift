@@ -9,22 +9,21 @@ import aa_multiplatform_lib
 import UIKit
 
 @main
-class AppDelegate: UIResponder,
-                   UIApplicationDelegate,
-                // Add listeners
-                   AddItContentListener,
-                   EventBroadcastListener {
+class AppDelegate:  UIResponder,
+                    UIApplicationDelegate,
+                    AddItContentListener,
+                    EventBroadcastListener,
+                    SessionBroadcastListener {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-        let aaSdk = IosAdAdapted.shared.withAppId(key: "NWY0NTM2YZDMMDQ0") // #YOUR API KEY GOES HERE#
+        let aaSdk = IosAdAdapted.shared.withAppId(key: "846ACA0X62F13A62") // #YOUR API KEY GOES HERE#
             .inEnvironment(env: AdAdaptedEnv.dev)
             .enableKeywordIntercept(value: true)
-            .onHasAdsToServe { bool in
-                print("Has ads to serve: \(bool.boolValue)")
-            }
+            .setSdkSessionListener(listener: self)
             .setSdkEventListener(listener: self)
             .setSdkAddItContentListener(listener: self)
+            .enableDebugLogging()
         do {
             try aaSdk.start()
         } catch {
@@ -34,20 +33,21 @@ class AppDelegate: UIResponder,
         return true
     }
 
-    // Ad tracking events
+    func onHasAdsToServe(hasAds: Bool) {
+        print("Has ads to serve: \(hasAds)")
+    }
+                        
+    // EventBroadcast listener
     func onAdEventTracked(zoneId: String, eventType: String) {
         print("Ad \(eventType) for Zone \(zoneId)")
     }
 
-    // Handle content
+    // AddIt content listener
     func onContentAvailable(content: AddToListContent) {
-        print("AppDelegate.onContentAvailable: \(content)")
         let payloadAddToListItems = content.getItems()
 
         for item in payloadAddToListItems {
-            print("Item is \(item.title)")
             NotificationCenter.default.post(name: Notification.Name("addDetailedListItem"), object: nil, userInfo: ["detailedItem" : item.title])
-            content.itemAcknowledge(item: item)
             content.acknowledge()
         }
     }

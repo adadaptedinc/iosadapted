@@ -21,7 +21,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     // Collect deeplink from userActivity
     func scene(_ scene: UIScene, continue userActivity: NSUserActivity) {
-        print("userActivity entered with \(userActivity.activityType)")
         do {
             try DeeplinkContentParser().handleDeeplink(userActivity: userActivity)
         } catch {

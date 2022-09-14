@@ -40,10 +40,10 @@
 		2F9011CAFE31DC637ADB7E578F533EC6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		3C8BFCB87A2537C4F9C440BBFF307FFF /* Pods-kmmLibraryExampleApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-kmmLibraryExampleApp-Info.plist"; sourceTree = "<group>"; };
 		3CEB6A2D909A5870718235497C3FB238 /* Pods-kmmLibraryExampleApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-kmmLibraryExampleApp-frameworks.sh"; sourceTree = "<group>"; };
-		4CD907A989C2B0B854606DDBD04907AA /* aa_multiplatform_lib.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = aa_multiplatform_lib.xcframework; path = swiftpackage/aa_multiplatform_lib.xcframework; sourceTree = "<group>"; };
 		63A4A46F80AB75FAFEC6B3CEB5ADA3DE /* Pods-kmmLibraryExampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kmmLibraryExampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 		65BEE16920C1EDD7FC02385213804363 /* aa_multiplatform_lib.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = aa_multiplatform_lib.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		76ED8DB18789BEA680F0255EE3CFC55B /* aa_multiplatform_lib.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = aa_multiplatform_lib.xcframework; sourceTree = "<group>"; };
 		84E7F05641D4FAF2315C1A7938A3BEE4 /* Pods-kmmLibraryExampleApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-kmmLibraryExampleApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B3C7599DAC5F566F952F311486EDAB02 /* aa_multiplatform_lib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = aa_multiplatform_lib.release.xcconfig; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 		2BC462D05D1067DEEA056F292CCA4D67 /* aa_multiplatform_lib */ = {
 			isa = PBXGroup;
 			children = (
-				AA9059AD3EE05F76EBE1F4094FEB9B5F /* Frameworks */,
+				893F7A3902F4BDD2564A5AFAA9F8D686 /* Frameworks */,
 				04FCC383FC1F56BB62D50B129CA61ED2 /* Pod */,
 				3E66EEF6942325E797E3ECD970D77EE8 /* Support Files */,
 			);
@@ -140,10 +140,10 @@
 			path = "Target Support Files/Pods-kmmLibraryExampleApp";
 			sourceTree = "<group>";
 		};
-		AA9059AD3EE05F76EBE1F4094FEB9B5F /* Frameworks */ = {
+		893F7A3902F4BDD2564A5AFAA9F8D686 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4CD907A989C2B0B854606DDBD04907AA /* aa_multiplatform_lib.xcframework */,
+				76ED8DB18789BEA680F0255EE3CFC55B /* aa_multiplatform_lib.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

@@ -17,11 +17,11 @@ RSYNC_PROTECT_TMP_FILES=(--filter "P .*.??????")
 variant_for_slice()
 {
   case "$1" in
-  "aa_multiplatform_lib.xcframework/ios-arm64")
-    echo ""
-    ;;
   "aa_multiplatform_lib.xcframework/ios-x86_64-simulator")
     echo "simulator"
+    ;;
+  "aa_multiplatform_lib.xcframework/ios-arm64")
+    echo ""
     ;;
   esac
 }
@@ -29,11 +29,11 @@ variant_for_slice()
 archs_for_slice()
 {
   case "$1" in
-  "aa_multiplatform_lib.xcframework/ios-arm64")
-    echo "arm64"
-    ;;
   "aa_multiplatform_lib.xcframework/ios-x86_64-simulator")
     echo "x86_64"
+    ;;
+  "aa_multiplatform_lib.xcframework/ios-arm64")
+    echo "arm64"
     ;;
   esac
 }
@@ -117,5 +117,5 @@ install_xcframework() {
   echo "Copied $source to $destination"
 }
 
-install_xcframework "${PODS_ROOT}/../../../aaKmmLib/aa_multiplatform_lib/swiftpackage/aa_multiplatform_lib.xcframework" "aa_multiplatform_lib" "framework" "ios-arm64" "ios-x86_64-simulator"
+install_xcframework "${PODS_ROOT}/../../../aaKmmLib/aa_multiplatform_lib/aa_multiplatform_lib.xcframework" "aa_multiplatform_lib" "framework" "ios-x86_64-simulator" "ios-arm64"
 
