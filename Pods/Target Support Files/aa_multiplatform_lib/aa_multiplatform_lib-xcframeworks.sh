@@ -117,5 +117,5 @@ install_xcframework() {
   echo "Copied $source to $destination"
 }
 
-install_xcframework "${PODS_ROOT}/../../../aaKmmLib/aa_multiplatform_lib/aa_multiplatform_lib.xcframework" "aa_multiplatform_lib" "framework" "ios-x86_64-simulator" "ios-arm64"
+install_xcframework "${PODS_ROOT}/aa_multiplatform_lib/aa_multiplatform_lib.xcframework" "aa_multiplatform_lib" "framework" "ios-x86_64-simulator" "ios-arm64"
 

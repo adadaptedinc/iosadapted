@@ -44,7 +44,7 @@ class ViewController: UIViewController,
         super.init(nibName: nil, bundle: nil)
 
         // Initialize a view with AAZoneView and zone id
-        self.zoneView = AAZoneView(zoneId: "13", contentListener: self).getZoneView()
+        self.zoneView = AAZoneView(zoneId: "102110", contentListener: self).getZoneView()
 
         populateDefaultList()
     }
@@ -53,7 +53,7 @@ class ViewController: UIViewController,
         super.init(coder: coder)
 
         // Initialize a view with AAZoneView and zone id
-        self.zoneView = AAZoneView(zoneId: "13", contentListener: self).getZoneView()
+        self.zoneView = AAZoneView(zoneId: "102110", contentListener: self).getZoneView()
 
         populateDefaultList()
     }

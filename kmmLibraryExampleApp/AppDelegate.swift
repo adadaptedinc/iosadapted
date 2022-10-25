@@ -17,7 +17,7 @@ class AppDelegate:  UIResponder,
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-        let aaSdk = IosAdAdapted.shared.withAppId(key: "846ACA0X62F13A62") // #YOUR API KEY GOES HERE#
+        let aaSdk = IosAdAdapted.shared.withAppId(key: "7D58810X6333241C") // #YOUR API KEY GOES HERE#
             .inEnvironment(env: AdAdaptedEnv.dev)
             .enableKeywordIntercept(value: true)
             .setSdkSessionListener(listener: self)
