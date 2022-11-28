@@ -32,9 +32,10 @@ class AppDelegate:  UIResponder,
 
         return true
     }
-
-    func onHasAdsToServe(hasAds: Bool) {
+    
+    func onHasAdsToServe(hasAds: Bool, availableZoneIds: [String]) {
         print("Has ads to serve: \(hasAds)")
+        print("Has ads to serve: \(availableZoneIds)")
     }
                         
     // EventBroadcast listener
