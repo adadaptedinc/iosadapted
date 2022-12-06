@@ -15,13 +15,11 @@
 		DF5CD69427AC6863004E8926 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5CD69227AC6863004E8926 /* LaunchScreen.storyboard */; };
 		DF67416B2849136200180449 /* SearchTextFieldUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF67416A2849136200180449 /* SearchTextFieldUI.swift */; };
 		DFC9880A27EB8DDB00F2E886 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DFC9880927EB8DDB00F2E886 /* .gitignore */; };
-		E81AE285BC24221A561B71C4 /* Pods_kmmLibraryExampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4081780B1DD1450B64BDD49 /* Pods_kmmLibraryExampleApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9638DB8EE95F65A3B5A9A965 /* Pods-kmmLibraryExampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kmmLibraryExampleApp.release.xcconfig"; path = "Target Support Files/Pods-kmmLibraryExampleApp/Pods-kmmLibraryExampleApp.release.xcconfig"; sourceTree = "<group>"; };
 		A953DDE9C4C4AB5FB0AD0E30 /* Pods-kmmLibraryExampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kmmLibraryExampleApp.debug.xcconfig"; path = "Target Support Files/Pods-kmmLibraryExampleApp/Pods-kmmLibraryExampleApp.debug.xcconfig"; sourceTree = "<group>"; };
-		B4081780B1DD1450B64BDD49 /* Pods_kmmLibraryExampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kmmLibraryExampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF23DFE5280F583E002C5DB9 /* cropped-AdAdapted-Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cropped-AdAdapted-Logo.png"; path = "Assets.xcassets/cropped-AdAdapted-Logo.png"; sourceTree = "<group>"; };
 		DF5CD68427AC6862004E8926 /* kmmLibraryExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kmmLibraryExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF5CD68727AC6862004E8926 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,7 +38,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E81AE285BC24221A561B71C4 /* Pods_kmmLibraryExampleApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,7 +47,6 @@
 		2FF980368A532B54D4F343E5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B4081780B1DD1450B64BDD49 /* Pods_kmmLibraryExampleApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
