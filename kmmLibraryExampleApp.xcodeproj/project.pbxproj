@@ -15,6 +15,7 @@
 		DF5CD69427AC6863004E8926 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5CD69227AC6863004E8926 /* LaunchScreen.storyboard */; };
 		DF67416B2849136200180449 /* SearchTextFieldUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF67416A2849136200180449 /* SearchTextFieldUI.swift */; };
 		DFC9880A27EB8DDB00F2E886 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DFC9880927EB8DDB00F2E886 /* .gitignore */; };
+		F4CDEF2629A8076200D5AB27 /* aa_multiplatform_lib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4CDEF2529A8076200D5AB27 /* aa_multiplatform_lib.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		DF67416A2849136200180449 /* SearchTextFieldUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextFieldUI.swift; sourceTree = "<group>"; };
 		DFC8FE5E286B43BC007EE877 /* kmmLibraryExampleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = kmmLibraryExampleApp.entitlements; sourceTree = "<group>"; };
 		DFC9880927EB8DDB00F2E886 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		F4CDEF2529A8076200D5AB27 /* aa_multiplatform_lib.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = aa_multiplatform_lib.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4CDEF2629A8076200D5AB27 /* aa_multiplatform_lib.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 		DF5CD67B27AC6862004E8926 = {
 			isa = PBXGroup;
 			children = (
+				F4CDEF2529A8076200D5AB27 /* aa_multiplatform_lib.xcframework */,
 				DFC9880927EB8DDB00F2E886 /* .gitignore */,
 				DF5CD68627AC6862004E8926 /* kmmLibraryExampleApp */,
 				DF5CD68527AC6862004E8926 /* Products */,

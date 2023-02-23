@@ -1,5 +1,5 @@
 PODS:
-  - aa_multiplatform_lib (1.0.0)
+  - aa_multiplatform_lib (1.1.0)
 
 DEPENDENCIES:
   - aa_multiplatform_lib
@@ -9,7 +9,7 @@ SPEC REPOS:
     - aa_multiplatform_lib
 
 SPEC CHECKSUMS:
-  aa_multiplatform_lib: 7cd23c2916d273e1a2802a975798fe21222cb9dc
+  aa_multiplatform_lib: 059b9f27be4619c6daeaeacf902584c98f7db9ee
 
 PODFILE CHECKSUM: dcaf8a5e1647b0c639701b71ef5c18be9bae7069
 

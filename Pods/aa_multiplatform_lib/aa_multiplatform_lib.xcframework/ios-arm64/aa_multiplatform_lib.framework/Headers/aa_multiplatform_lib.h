@@ -154,6 +154,7 @@ __attribute__((swift_name("AdAdaptedBase")))
 @property id<Aa_multiplatform_libEventBroadcastListener> eventListener __attribute__((swift_name("eventListener")));
 @property BOOL hasStarted __attribute__((swift_name("hasStarted")));
 @property BOOL isKeywordInterceptEnabled __attribute__((swift_name("isKeywordInterceptEnabled")));
+@property BOOL isPayloadEnabled __attribute__((swift_name("isPayloadEnabled")));
 @property BOOL isProd __attribute__((swift_name("isProd")));
 @property (readonly) NSDictionary<NSString *, NSString *> *params __attribute__((swift_name("params")));
 @property id<Aa_multiplatform_libSessionBroadcastListener> sessionListener __attribute__((swift_name("sessionListener")));
@@ -213,6 +214,7 @@ __attribute__((swift_name("IosAdAdapted")))
 - (Aa_multiplatform_libIosAdAdapted *)enableAdTracking __attribute__((swift_name("enableAdTracking()")));
 - (Aa_multiplatform_libIosAdAdapted *)enableDebugLogging __attribute__((swift_name("enableDebugLogging()")));
 - (Aa_multiplatform_libIosAdAdapted *)enableKeywordInterceptValue:(BOOL)value __attribute__((swift_name("enableKeywordIntercept(value:)")));
+- (Aa_multiplatform_libIosAdAdapted *)enablePayloadsValue:(BOOL)value __attribute__((swift_name("enablePayloads(value:)")));
 - (Aa_multiplatform_libIosAdAdapted *)inEnvironmentEnv:(Aa_multiplatform_libAdAdaptedEnv *)env __attribute__((swift_name("inEnvironment(env:)")));
 - (Aa_multiplatform_libIosAdAdapted *)setCustomIdentifierIdentifier:(NSString *)identifier __attribute__((swift_name("setCustomIdentifier(identifier:)")));
 - (Aa_multiplatform_libIosAdAdapted *)setSdkAddItContentListenerListener:(id<Aa_multiplatform_libAddItContentListener>)listener __attribute__((swift_name("setSdkAddItContentListener(listener:)")));
@@ -296,7 +298,7 @@ __attribute__((swift_name("SessionAdapterListener")))
 __attribute__((swift_name("SessionBroadcastListener")))
 @protocol Aa_multiplatform_libSessionBroadcastListener
 @required
-- (void)onHasAdsToServeHasAds:(BOOL)hasAds __attribute__((swift_name("onHasAdsToServe(hasAds:)")));
+- (void)onHasAdsToServeHasAds:(BOOL)hasAds availableZoneIds:(NSArray<NSString *> *)availableZoneIds __attribute__((swift_name("onHasAdsToServe(hasAds:availableZoneIds:)")));
 @end;
 
 __attribute__((swift_name("WebViewListener")))
@@ -358,9 +360,9 @@ __attribute__((swift_name("Session")))
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSDictionary<NSString *, Aa_multiplatform_libZone *> *)getAllZones __attribute__((swift_name("getAllZones()")));
 - (Aa_multiplatform_libZone *)getZoneZoneId:(NSString *)zoneId __attribute__((swift_name("getZone(zoneId:)")));
+- (NSArray<NSString *> *)getZonesWithAds __attribute__((swift_name("getZonesWithAds()")));
 - (BOOL)hasActiveCampaigns __attribute__((swift_name("hasActiveCampaigns()")));
 - (BOOL)hasExpired __attribute__((swift_name("hasExpired()")));
-- (BOOL)hasZoneAds __attribute__((swift_name("hasZoneAds()")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
 - (void)updateZonesNewZones:(NSDictionary<NSString *, Aa_multiplatform_libZone *> *)newZones __attribute__((swift_name("updateZones(newZones:)")));
@@ -393,6 +395,7 @@ __attribute__((swift_name("SessionClient")))
 - (void)addPresenterListener:(id<Aa_multiplatform_libSessionListener>)listener __attribute__((swift_name("addPresenter(listener:)")));
 - (void)createInstanceAdapter:(id<Aa_multiplatform_libSessionAdapter>)adapter transporter:(id<Aa_multiplatform_libTransporterCoroutineScope>)transporter __attribute__((swift_name("createInstance(adapter:transporter:)")));
 - (BOOL)hasInstance __attribute__((swift_name("hasInstance()")));
+- (BOOL)hasStaleAds __attribute__((swift_name("hasStaleAds()")));
 - (void)onNewAdsLoadFailed __attribute__((swift_name("onNewAdsLoadFailed()")));
 - (void)onNewAdsLoadedSession:(Aa_multiplatform_libSession *)session __attribute__((swift_name("onNewAdsLoaded(session:)")));
 - (void)onSessionInitializeFailed __attribute__((swift_name("onSessionInitializeFailed()")));
@@ -786,6 +789,7 @@ __attribute__((swift_name("HttpConnector")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)httpConnector __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) Aa_multiplatform_libHttpConnector *shared __attribute__((swift_name("shared")));
+@property (readonly) NSString *API_HEADER __attribute__((swift_name("API_HEADER")));
 @property (readonly) Aa_multiplatform_libKtor_client_coreHttpClient *client __attribute__((swift_name("client")));
 @end;
 
@@ -1471,6 +1475,7 @@ __attribute__((swift_name("AALogger")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)aALogger __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) Aa_multiplatform_libAALogger *shared __attribute__((swift_name("shared")));
+- (void)disableAllLogging __attribute__((swift_name("disableAllLogging()")));
 - (void)enableDebugLogging __attribute__((swift_name("enableDebugLogging()")));
 - (void)logDebugMessage:(NSString *)message __attribute__((swift_name("logDebug(message:)")));
 - (void)logErrorMessage:(NSString *)message __attribute__((swift_name("logError(message:)")));
