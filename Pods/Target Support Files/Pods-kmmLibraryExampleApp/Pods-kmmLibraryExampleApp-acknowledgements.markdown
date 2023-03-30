@@ -1,7 +1,7 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## aa_multiplatform_lib
+## AAMultiplatformLib
 
 Copyright (c) 2022-present, AdAdapted, Inc. All rights reserved.
 

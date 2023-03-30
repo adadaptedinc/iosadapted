@@ -1,5 +1,5 @@
 target 'kmmLibraryExampleApp' do
   use_frameworks!
 
-  pod 'aa_multiplatform_lib'
+  pod 'AAMultiplatformLib', :path => '/Users/matthewkruk/Documents/AAMultiplatformLib/AAMultiplatformLib'
 end

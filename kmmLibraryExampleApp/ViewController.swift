@@ -6,7 +6,7 @@
 //  Copyright (c) 2022 mkruk2. All rights reserved.
 //
 
-import aa_multiplatform_lib
+import AAMultiplatformLib
 import UIKit
 
 class ViewController: UIViewController,

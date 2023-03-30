@@ -1,16 +1,16 @@
 PODS:
-  - aa_multiplatform_lib (1.0.0)
+  - AAMultiplatformLib (1.2.0)
 
 DEPENDENCIES:
-  - aa_multiplatform_lib
+  - AAMultiplatformLib (from `/Users/matthewkruk/Documents/AAMultiplatformLib/AAMultiplatformLib`)
 
-SPEC REPOS:
-  trunk:
-    - aa_multiplatform_lib
+EXTERNAL SOURCES:
+  AAMultiplatformLib:
+    :path: "/Users/matthewkruk/Documents/AAMultiplatformLib/AAMultiplatformLib"
 
 SPEC CHECKSUMS:
-  aa_multiplatform_lib: 7cd23c2916d273e1a2802a975798fe21222cb9dc
+  AAMultiplatformLib: c1b5ac0ca95449b9f2f587f792bdf6413cb2c67b
 
-PODFILE CHECKSUM: dcaf8a5e1647b0c639701b71ef5c18be9bae7069
+PODFILE CHECKSUM: 42e14a5c58ee5b1b1360e14e59f4cf8656071b37
 
 COCOAPODS: 1.11.3

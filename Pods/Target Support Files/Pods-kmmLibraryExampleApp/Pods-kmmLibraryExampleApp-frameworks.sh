@@ -176,10 +176,10 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/aa_multiplatform_lib/aa_multiplatform_lib.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AAMultiplatformLib/AAMultiplatformLib.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/aa_multiplatform_lib/aa_multiplatform_lib.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AAMultiplatformLib/AAMultiplatformLib.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

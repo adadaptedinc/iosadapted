@@ -1,2 +1,2 @@
 ${PODS_ROOT}/Target Support Files/Pods-kmmLibraryExampleApp/Pods-kmmLibraryExampleApp-frameworks.sh
-${PODS_XCFRAMEWORKS_BUILD_DIR}/aa_multiplatform_lib/aa_multiplatform_lib.framework/aa_multiplatform_lib
+${PODS_XCFRAMEWORKS_BUILD_DIR}/AAMultiplatformLib/AAMultiplatformLib.framework/AAMultiplatformLib

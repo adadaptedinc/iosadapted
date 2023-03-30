@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C4C557413984573ABA2BCEB /* Pods_kmmLibraryExampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 195000793AE04AC6E97B705B /* Pods_kmmLibraryExampleApp.framework */; };
 		DF23DFE6280F583E002C5DB9 /* cropped-AdAdapted-Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DF23DFE5280F583E002C5DB9 /* cropped-AdAdapted-Logo.png */; };
 		DF5CD68827AC6862004E8926 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5CD68727AC6862004E8926 /* AppDelegate.swift */; };
 		DF5CD68A27AC6862004E8926 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5CD68927AC6862004E8926 /* SceneDelegate.swift */; };
@@ -18,8 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9638DB8EE95F65A3B5A9A965 /* Pods-kmmLibraryExampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kmmLibraryExampleApp.release.xcconfig"; path = "Target Support Files/Pods-kmmLibraryExampleApp/Pods-kmmLibraryExampleApp.release.xcconfig"; sourceTree = "<group>"; };
-		A953DDE9C4C4AB5FB0AD0E30 /* Pods-kmmLibraryExampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kmmLibraryExampleApp.debug.xcconfig"; path = "Target Support Files/Pods-kmmLibraryExampleApp/Pods-kmmLibraryExampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		195000793AE04AC6E97B705B /* Pods_kmmLibraryExampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kmmLibraryExampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		263B74ACB45406823545979A /* Pods-kmmLibraryExampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kmmLibraryExampleApp.release.xcconfig"; path = "Target Support Files/Pods-kmmLibraryExampleApp/Pods-kmmLibraryExampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		35AF328E90A111F190167DCA /* Pods-kmmLibraryExampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kmmLibraryExampleApp.debug.xcconfig"; path = "Target Support Files/Pods-kmmLibraryExampleApp/Pods-kmmLibraryExampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 		DF23DFE5280F583E002C5DB9 /* cropped-AdAdapted-Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cropped-AdAdapted-Logo.png"; path = "Assets.xcassets/cropped-AdAdapted-Logo.png"; sourceTree = "<group>"; };
 		DF5CD68427AC6862004E8926 /* kmmLibraryExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kmmLibraryExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF5CD68727AC6862004E8926 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,26 +40,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C4C557413984573ABA2BCEB /* Pods_kmmLibraryExampleApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2FF980368A532B54D4F343E5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		527572D004E9802DC9098A94 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A953DDE9C4C4AB5FB0AD0E30 /* Pods-kmmLibraryExampleApp.debug.xcconfig */,
-				9638DB8EE95F65A3B5A9A965 /* Pods-kmmLibraryExampleApp.release.xcconfig */,
+				35AF328E90A111F190167DCA /* Pods-kmmLibraryExampleApp.debug.xcconfig */,
+				263B74ACB45406823545979A /* Pods-kmmLibraryExampleApp.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		893CBB20B6DCC8CA371565DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				195000793AE04AC6E97B705B /* Pods_kmmLibraryExampleApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		DF5CD67B27AC6862004E8926 = {
@@ -67,7 +71,7 @@
 				DF5CD68627AC6862004E8926 /* kmmLibraryExampleApp */,
 				DF5CD68527AC6862004E8926 /* Products */,
 				527572D004E9802DC9098A94 /* Pods */,
-				2FF980368A532B54D4F343E5 /* Frameworks */,
+				893CBB20B6DCC8CA371565DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,11 +106,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF5CD69827AC6863004E8926 /* Build configuration list for PBXNativeTarget "kmmLibraryExampleApp" */;
 			buildPhases = (
-				D905709A82C3EF2ADF85776C /* [CP] Check Pods Manifest.lock */,
+				E72C0444FB37BEFB48DF8C45 /* [CP] Check Pods Manifest.lock */,
 				DF5CD68027AC6862004E8926 /* Sources */,
 				DF5CD68127AC6862004E8926 /* Frameworks */,
 				DF5CD68227AC6862004E8926 /* Resources */,
-				FC3F3DA96E5D31A32EC550C6 /* [CP] Embed Pods Frameworks */,
+				AB92929358E198F556CFE8B3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -165,7 +169,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		D905709A82C3EF2ADF85776C /* [CP] Check Pods Manifest.lock */ = {
+		AB92929358E198F556CFE8B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kmmLibraryExampleApp/Pods-kmmLibraryExampleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kmmLibraryExampleApp/Pods-kmmLibraryExampleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kmmLibraryExampleApp/Pods-kmmLibraryExampleApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E72C0444FB37BEFB48DF8C45 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -185,23 +206,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FC3F3DA96E5D31A32EC550C6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-kmmLibraryExampleApp/Pods-kmmLibraryExampleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-kmmLibraryExampleApp/Pods-kmmLibraryExampleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kmmLibraryExampleApp/Pods-kmmLibraryExampleApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -350,7 +354,7 @@
 		};
 		DF5CD69927AC6863004E8926 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A953DDE9C4C4AB5FB0AD0E30 /* Pods-kmmLibraryExampleApp.debug.xcconfig */;
+			baseConfigurationReference = 35AF328E90A111F190167DCA /* Pods-kmmLibraryExampleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -379,7 +383,7 @@
 		};
 		DF5CD69A27AC6863004E8926 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9638DB8EE95F65A3B5A9A965 /* Pods-kmmLibraryExampleApp.release.xcconfig */;
+			baseConfigurationReference = 263B74ACB45406823545979A /* Pods-kmmLibraryExampleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
