@@ -5,7 +5,7 @@
 //  Created by Matthew Kruk on 01/26/22.
 //
 
-import aa_multiplatform_lib
+import AAMultiplatformLib
 import UIKit
 
 @main

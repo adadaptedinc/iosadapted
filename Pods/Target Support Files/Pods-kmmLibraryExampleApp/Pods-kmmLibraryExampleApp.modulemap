@@ -1,6 +1,0 @@
-framework module Pods_kmmLibraryExampleApp {
-  umbrella header "Pods-kmmLibraryExampleApp-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -5,7 +5,7 @@
 //  Created by Matthew Kruk on 2/3/22.
 //
 
-import aa_multiplatform_lib
+import AAMultiplatformLib
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
