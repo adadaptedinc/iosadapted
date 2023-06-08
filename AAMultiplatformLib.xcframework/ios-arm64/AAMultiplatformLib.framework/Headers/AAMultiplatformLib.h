@@ -796,6 +796,7 @@ __attribute__((swift_name("DeviceInfo.Companion")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) AAMLDeviceInfoCompanion *shared __attribute__((swift_name("shared")));
+- (AAMLDeviceInfo *)empty __attribute__((swift_name("empty()")));
 - (id<AAMLKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @property (readonly) NSString *UNKNOWN_VALUE __attribute__((swift_name("UNKNOWN_VALUE")));
 @end

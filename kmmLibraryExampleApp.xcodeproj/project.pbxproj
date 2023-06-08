@@ -15,7 +15,7 @@
 		DF5CD69427AC6863004E8926 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5CD69227AC6863004E8926 /* LaunchScreen.storyboard */; };
 		DF67416B2849136200180449 /* SearchTextFieldUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF67416A2849136200180449 /* SearchTextFieldUI.swift */; };
 		DFC9880A27EB8DDB00F2E886 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DFC9880927EB8DDB00F2E886 /* .gitignore */; };
-		F4A5AA5729D5E27200080EE5 /* AAMultiplatformLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4A5AA5629D5E27200080EE5 /* AAMultiplatformLib.xcframework */; };
+		F4B2CC102A1DBF35007EC359 /* AAMultiplatformLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B2CC0F2A1DBF35007EC359 /* AAMultiplatformLib.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +30,7 @@
 		DF67416A2849136200180449 /* SearchTextFieldUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextFieldUI.swift; sourceTree = "<group>"; };
 		DFC8FE5E286B43BC007EE877 /* kmmLibraryExampleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = kmmLibraryExampleApp.entitlements; sourceTree = "<group>"; };
 		DFC9880927EB8DDB00F2E886 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		F4A5AA5629D5E27200080EE5 /* AAMultiplatformLib.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AAMultiplatformLib.xcframework; sourceTree = "<group>"; };
+		F4B2CC0F2A1DBF35007EC359 /* AAMultiplatformLib.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AAMultiplatformLib.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4A5AA5729D5E27200080EE5 /* AAMultiplatformLib.xcframework in Frameworks */,
+				F4B2CC102A1DBF35007EC359 /* AAMultiplatformLib.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,7 +48,7 @@
 		DF5CD67B27AC6862004E8926 = {
 			isa = PBXGroup;
 			children = (
-				F4A5AA5629D5E27200080EE5 /* AAMultiplatformLib.xcframework */,
+				F4B2CC0F2A1DBF35007EC359 /* AAMultiplatformLib.xcframework */,
 				DFC9880927EB8DDB00F2E886 /* .gitignore */,
 				DF5CD68627AC6862004E8926 /* kmmLibraryExampleApp */,
 				DF5CD68527AC6862004E8926 /* Products */,

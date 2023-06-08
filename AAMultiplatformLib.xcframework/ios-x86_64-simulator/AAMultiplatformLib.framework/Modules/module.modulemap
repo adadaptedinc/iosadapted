@@ -1,8 +1,0 @@
-framework module AAMultiplatformLib {
-    umbrella header "AAMultiplatformLib.h"
-
-    export *
-    module * { export * }
-
-    use Foundation
-}
